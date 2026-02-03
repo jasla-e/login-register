@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef2f5;
+}
+.container{
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 25px; 
+ box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+ margin-top: 2px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+.para{
+  color: #777;
+  margin-bottom: 15px;
+}
+.inputbox{
+  position:relative;
+}
+.inputbox input{
+  width: 100%;
+  height: 30px;
+  background-color: #eeeded;
+  position: relative;
+  padding: 10px 40px;    
+  border-radius: 25px;
+  border: 1px solid #999;
+  outline: none;
+
+}
+
+#togglePassword {
+  position: absolute;
+   bottom: 1px;
+  right: 15px;     
+  cursor: pointer;
+  color: #7e7979;
+  transform: translateY(-50%);
+}
+  
+.button{
+ width: 100%;
+ margin-top: 0px;
+ margin-bottom: 0px;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #1f3d57;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background: #09090e;
+}
+
+.signup p{
+     text-align: center;
+  margin-top: 15px;
+}
+
+
+.error {
+  color: red;
+  font-size: 14px;
+  height: 14px;
+  display: block;
+  margin-top: 20px;
+  position: relative;
+  bottom: 10px;
+}
+
+.signup a{
+    
+   text-decoration: none;
+  color: #1f3d57;
+  font-weight: 600;
+  margin-left: 5px;
+  
+   
+}
+
+.signup a:hover{
+  color: black;
+}
+
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .para {
+    font-size: 14px;
+   
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .signup p {
+    font-size: 14px;
+  }
+}

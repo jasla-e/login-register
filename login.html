@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container" id="con">
+       <div class="image">
+           <img src="OTP.png"  max-width="400px" height="350px">
+       </div>
+       <div class="card" id="login card">
+         <h1>Login</h1>
+         <p class="para">Please sign in to continue</p>
+    <form id="loginForm">
+        <div class="inputbox" >
+        <input type="email" id="email" placeholder="👩🏻‍💻 Email " style="border-radius: 25px; height: 40px;margin-bottom: 20px;">
+        </div>
+        
+        <div class="inputbox" id="passwordbox" >
+        <input type="password" id="password" placeholder="🔐Password" style="border-radius: 25px; margin-top: -10px;height: 40px;">
+        <i class="fa fa-eye toggle" id="togglePassword" ></i>
+       
+        </div>
+        <small class="error" id="errorMsg"></small>
+        <button type="submit" class="button" onclick="login()">Sign In</button>
+    </form> 
+
+        <div class="signup">
+        <p class="text">Don't have an account?
+        <a href="register.html">signup</a></p>
+        </div>
+
+       </div>
+
+    </div>
+
+    <script src="java.js"></script>
+    
+</body>
+</html>
