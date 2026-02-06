@@ -20,7 +20,7 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
     return;
   }
 
-  if (password.length > 6) {
+  if (password.length < 6) {
     errorMsg.textContent = "Password must be at least 6 characters";
     return;
   }
@@ -43,4 +43,5 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
   alert("Registration successful!");
   window.location.href = "index.html";
 });
+
 
